@@ -14,10 +14,12 @@ function mergeSortedArray(array1, array2) {
 
   //Check if the first array is empty then just add the second array to the merge array by return it
   if (array1.length === 0) {
+    console.log(array2);
     return array2;
   }
   //Check if the second array is empty then just add the first array to the merge array by return it
   if (array2.length === 0) {
+    console.log(array1);
     return array1;
   }
 
@@ -47,4 +49,4 @@ function mergeSortedArray(array1, array2) {
 }
 
 //Call the function with two array
-mergeSortedArray([1, 2, 6], [6, 9, 10]);
+mergeSortedArray([1, 2, 4], [7, 8, 9]);
